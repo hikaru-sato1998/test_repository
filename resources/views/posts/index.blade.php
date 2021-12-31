@@ -10,7 +10,7 @@
     <main>
         <div class="posts">
             @foreach($posts as $post)
-            <a>
+            <a href="/posts/{{ $post->id }}">
                 <div class="post">
                     <div class="post-text">
                         <h2 class="title">{{ $post->title }}</h2>
