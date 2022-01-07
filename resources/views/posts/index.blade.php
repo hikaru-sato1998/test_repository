@@ -8,6 +8,7 @@
         <h1>BlogBlogBlog</h1>
     </header>
     <main>
+        [<a href='/posts/create'>create</a>]
         <div class="posts">
             @foreach($posts as $post)
             <a href="/posts/{{ $post->id }}">
