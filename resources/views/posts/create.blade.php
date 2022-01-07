@@ -19,7 +19,7 @@
                 <h3>本文</h3>
                 <textarea name="post[body]"></textarea>
             </div>
-            <input type="submit" name="save" value="保存">
+            <input type="submit" value="保存">
         </form>
     </main>
     <footer>
