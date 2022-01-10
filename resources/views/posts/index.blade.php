@@ -19,10 +19,24 @@
                     </div>
                 </div>
             </a>
+            <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="POST" style="display:inline">
+                @csrf
+                @method('DELETE')
+                <button id="delete" type="submit">削除</button>
+            </form>
             @endforeach
         </div>
         <div class="paginate">
             {{ $posts->links() }}
         </div>
     </main>
+    <script language="javascript" type="text/javascript">
+        document.getElementById("delete").onclick = function(){
+            if(window.confirm("投稿を削除します。よろしいですか？")){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
 </body>
